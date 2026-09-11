@@ -17,4 +17,6 @@ def count_digits(n):
 
 # Exercise 3
 def sum_digits(n):
-    pass
+    if n<10:
+        return n
+    return n % 10 + sum_digits(n//10)
