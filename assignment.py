@@ -10,7 +10,10 @@ def fibonacci(n):
 
 # Exercise 2
 def count_digits(n):
-    pass
+    if n< 10:
+        return 1
+    return 1 + count_digits(n//10)
+
 
 # Exercise 3
 def sum_digits(n):
